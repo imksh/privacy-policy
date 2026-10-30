@@ -146,7 +146,7 @@ const Table = <T extends Record<string, unknown>>({
             ) : data.length > 0 ? (
               data.map((row, rowIndex) => (
                 <tr
-                  key={row.id || rowIndex}
+                  key={((row as any).id as string | number) || rowIndex}
                   onClick={() => onRowClick && onRowClick(row)}
                   className={`transition-all duration-200 group ${
                     onRowClick
@@ -163,7 +163,7 @@ const Table = <T extends Record<string, unknown>>({
                         key={(col.accessor as string) || colIndex}
                         className="px-6 py-4 text-[13px] text-base-content/80 whitespace-nowrap align-middle border-none"
                       >
-                        {col.render ? col.render(value, row, rowIndex) : value}
+                        {col.render ? col.render(value, row, rowIndex) : (value as React.ReactNode)}
                       </td>
                     );
                   })}
@@ -219,7 +219,7 @@ const Table = <T extends Record<string, unknown>>({
             <>
               {data.map((row, index) => (
                 <div
-                  key={row.id || index}
+                  key={((row as any).id as string | number) || index}
                   onClick={() => onRowClick && onRowClick(row)}
                   className={onRowClick ? "cursor-pointer" : ""}
                 >

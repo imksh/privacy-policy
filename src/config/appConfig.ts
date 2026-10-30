@@ -1,11 +1,11 @@
 const appConfig = {
   app: {
-    name: "My App",
-    logo: "./logo.png",
-    shortName: "App",
-    description: "A React application built with @imksh/create",
+    name: "GSTHisab – Legal & Privacy",
+    logo: "/favicon.svg",
+    shortName: "GSTHisab",
+    description: "Official Privacy Policy & Legal Portal for GSTHisab – GST Invoice Maker Android Application.",
     version: "1.0.0",
-    author: "",
+    author: "GSTHisab Developer Team",
   },
 
   api: {

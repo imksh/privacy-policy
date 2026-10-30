@@ -1,7 +1,15 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
-const SEO = ({
+interface SEOProps {
+  title?: string;
+  description?: string;
+  keywords?: string;
+  canonical?: string;
+  noIndex?: boolean;
+}
+
+const SEO: React.FC<SEOProps> = ({
   title,
   description,
   keywords,
@@ -18,7 +26,7 @@ const SEO = ({
 
     // DESCRIPTION
     if (description) {
-      let meta = document.querySelector("meta[name='description']");
+      let meta = document.querySelector<HTMLMetaElement>("meta[name='description']");
       if (!meta) {
         meta = document.createElement("meta");
         meta.name = "description";
@@ -29,7 +37,7 @@ const SEO = ({
 
     // KEYWORDS (optional)
     if (keywords) {
-      let meta = document.querySelector("meta[name='keywords']");
+      let meta = document.querySelector<HTMLMetaElement>("meta[name='keywords']");
       if (!meta) {
         meta = document.createElement("meta");
         meta.name = "keywords";
@@ -39,7 +47,7 @@ const SEO = ({
     }
 
     // CANONICAL
-    let link = document.querySelector("link[rel='canonical']");
+    let link = document.querySelector<HTMLLinkElement>("link[rel='canonical']");
     if (!link) {
       link = document.createElement("link");
       link.rel = "canonical";
@@ -48,10 +56,10 @@ const SEO = ({
 
     link.href =
       canonical ||
-      `https://shreebaglamukhi.com${location.pathname}`;
+      location.pathname;
 
     // ROBOTS
-    let robots = document.querySelector("meta[name='robots']");
+    let robots = document.querySelector<HTMLMetaElement>("meta[name='robots']");
     if (!robots) {
       robots = document.createElement("meta");
       robots.name = "robots";

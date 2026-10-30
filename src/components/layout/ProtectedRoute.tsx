@@ -9,9 +9,9 @@ interface ProtectedRouteProps {
 }
 
 const ProtectedRoute: React.FC<ProtectedRouteProps> = ({ children, role }) => {
-  const { user, isCheckingAuth } = useAuthStore();
+  const { user, isCheckingAuth, loading } = useAuthStore();
 
-  if (loading) return <Loading />;
+  if (isCheckingAuth || loading) return <Loading />;
 
   if (!user) return <Navigate to="/login" />;
 

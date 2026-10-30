@@ -50,7 +50,7 @@ const Header = () => {
           <div className="flex items-center gap-3">
             <Link to="/" className="flex items-center gap-2">
               {appConfig.app.logo ? (
-                <img src={appConfig.logo} alt="logo" className="h-10 w-10" />
+                <img src={appConfig.app.logo} alt="logo" className="h-10 w-10" />
               ) : (
                 <div className="flex items-center">
                   <div className="w-8 h-8 rounded-full bg-base-100/25 flex items-center justify-center text-primary-content shadow-inner">

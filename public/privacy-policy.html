@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy | GSTHisab – GST Invoice Maker</title>
+  <meta name="description" content="Official Privacy Policy and Data Safety information for GSTHisab – GST Invoice Maker Android Application. Compliant with Indian DPDPA 2023 and Google Play Developer policies.">
+  <meta name="robots" content="index, follow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #2563eb;
+      --primary-dark: #1d4ed8;
+      --primary-light: #eff6ff;
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --border: #334155;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --success: #10b981;
+      --success-light: rgba(16, 185, 129, 0.12);
+      --warning: #f59e0b;
+      --radius: 14px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Outfit', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: var(--bg);
+      color: var(--text-main);
+      line-height: 1.65;
+      padding-bottom: 60px;
+    }
+
+    .top-bar {
+      background: linear-gradient(90deg, #2563eb, #4f46e5);
+      color: #ffffff;
+      padding: 10px 20px;
+      font-size: 13px;
+      font-weight: 500;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 3px 8px;
+      border-radius: 6px;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .badge-white { background: rgba(255, 255, 255, 0.2); color: #fff; }
+    .badge-success { background: var(--success-light); color: var(--success); border: 1px solid rgba(16, 185, 129, 0.3); }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    header {
+      padding: 40px 0 20px 0;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 30px;
+    }
+
+    .app-title {
+      font-size: 32px;
+      font-weight: 800;
+      color: #ffffff;
+      margin-top: 10px;
+      letter-spacing: -0.5px;
+    }
+
+    .app-title span { color: #60a5fa; }
+
+    .lead {
+      color: var(--text-muted);
+      font-size: 16px;
+      margin-top: 12px;
+      line-height: 1.6;
+    }
+
+    .meta-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 12px;
+      margin-top: 24px;
+    }
+
+    .meta-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      padding: 12px 16px;
+      border-radius: 10px;
+      font-size: 13px;
+    }
+
+    .meta-label { color: var(--text-muted); font-size: 11px; text-transform: uppercase; font-weight: 600; display: block; }
+    .meta-val { color: var(--text-main); font-weight: 700; margin-top: 2px; display: block; }
+
+    .highlight-card {
+      background: linear-gradient(135deg, rgba(37, 99, 235, 0.12), rgba(30, 41, 59, 0.7));
+      border: 1px solid rgba(59, 130, 246, 0.3);
+      padding: 24px;
+      border-radius: var(--radius);
+      margin-bottom: 35px;
+    }
+
+    .highlight-title {
+      font-size: 15px;
+      font-weight: 800;
+      color: #60a5fa;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 12px;
+    }
+
+    .highlight-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 14px;
+      font-size: 13px;
+    }
+
+    .highlight-item strong { color: #ffffff; display: block; margin-bottom: 2px; }
+
+    .section {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px 28px;
+      margin-bottom: 24px;
+    }
+
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+
+    .section-num {
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      background: rgba(37, 99, 235, 0.2);
+      color: #60a5fa;
+      font-weight: 800;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .section-title {
+      font-size: 19px;
+      font-weight: 700;
+      color: #ffffff;
+    }
+
+    p { margin-bottom: 12px; color: #cbd5e1; font-size: 14.5px; }
+    p:last-child { margin-bottom: 0; }
+
+    ul {
+      margin-left: 20px;
+      margin-bottom: 14px;
+      color: #cbd5e1;
+      font-size: 14px;
+    }
+
+    li { margin-bottom: 6px; }
+
+    strong { color: #ffffff; }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+      font-size: 13px;
+    }
+
+    th, td {
+      border: 1px solid var(--border);
+      padding: 10px 14px;
+      text-align: left;
+    }
+
+    th { background: rgba(15, 23, 42, 0.6); color: #ffffff; font-weight: 700; }
+    td { color: #cbd5e1; }
+
+    .tag-yes { color: var(--success); font-weight: 700; }
+    .tag-no { color: #ef4444; font-weight: 700; }
+
+    .officer-box {
+      background: rgba(15, 23, 42, 0.6);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 18px;
+      margin-top: 16px;
+      font-size: 13.5px;
+    }
+
+    .officer-row { margin-bottom: 8px; }
+    .officer-row:last-child { margin-bottom: 0; }
+
+    .btn-print {
+      background: var(--primary);
+      color: #ffffff;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      float: right;
+    }
+
+    .btn-print:hover { background: var(--primary-dark); }
+
+    footer {
+      margin-top: 50px;
+      padding-top: 25px;
+      border-top: 1px solid var(--border);
+      color: var(--text-muted);
+      font-size: 12px;
+      text-align: center;
+    }
+
+    @media print {
+      body { background: #fff; color: #000; padding: 0; }
+      .top-bar, .btn-print { display: none; }
+      .section, .highlight-card, .meta-card, .officer-box {
+        background: #fff !important;
+        border: 1px solid #ddd !important;
+        color: #000 !important;
+        break-inside: avoid;
+      }
+      p, li, td, th { color: #000 !important; }
+      .section-title, .app-title { color: #000 !important; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="top-bar">
+    <div>
+      <span class="badge badge-white">Verified Compliance</span>
+      <span style="margin-left: 8px;">Indian DPDPA 2023 & Google Play Developer User Data Policies</span>
+    </div>
+    <div>
+      <span>100% Offline & Sandboxed SQLite</span>
+    </div>
+  </div>
+
+  <div class="container">
+    <header>
+      <button class="btn-print" onclick="window.print()">Print / Save PDF</button>
+      <span class="badge badge-success">Official Public Legal Policy</span>
+      <h1 class="app-title">Privacy Policy for <span>GSTHisab – GST Invoice Maker</span></h1>
+      <p class="lead">
+        Transparent, privacy-respecting, and 100% offline-first. Your commercial accounts, client directories, and invoice records remain strictly inside your personal Android device.
+      </p>
+
+      <div class="meta-grid">
+        <div class="meta-card">
+          <span class="meta-label">Application</span>
+          <span class="meta-val">GSTHisab</span>
+        </div>
+        <div class="meta-card">
+          <span class="meta-label">Effective Date</span>
+          <span class="meta-val">October 30, 2026</span>
+        </div>
+        <div class="meta-card">
+          <span class="meta-label">Last Updated</span>
+          <span class="meta-val">October 30, 2026</span>
+        </div>
+        <div class="meta-card">
+          <span class="meta-label">Governing Law</span>
+          <span class="meta-val">DPDPA 2023 (India)</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Highlights -->
+    <div class="highlight-card">
+      <div class="highlight-title">Executive Summary at a Glance</div>
+      <div class="highlight-grid">
+        <div class="highlight-item">
+          <strong>100% On-Device SQLite</strong>
+          All invoices, customer records, and tax calculations reside locally on your phone.
+        </div>
+        <div class="highlight-item">
+          <strong>No User Accounts Required</strong>
+          No sign-up, email verification, phone OTP, or password credentials needed.
+        </div>
+        <div class="highlight-item">
+          <strong>Zero Server Transmission</strong>
+          We do not operate cloud databases or external servers; no data is uploaded.
+        </div>
+        <div class="highlight-item">
+          <strong>Zero Third-Party Trackers</strong>
+          No advertising SDKs (AdMob), no analytics beacons, and no marketing trackers.
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 1 -->
+    <div class="section">
+      <div class="section-header">
+        <div class="section-num">1</div>
+        <h2 class="section-title">Introduction and Scope</h2>
+      </div>
+      <p>
+        This Privacy Policy governs the Android application <strong>GSTHisab – GST Invoice Maker</strong> (referred to as "GSTHisab", "the App", or "we"), distributed via the Google Play Store and developed by <strong>[Developer / Company Name]</strong>.
+      </p>
+      <p>
+        GSTHisab is an offline-first GST invoice generation, tax estimation, and professional billing utility built specifically for Indian shopkeepers, small retail businesses, traders, MSMEs, freelancers, and individuals.
+      </p>
+      <p>
+        This policy establishes our commitment to compliance under the <strong>Digital Personal Data Protection Act, 2023 (DPDPA 2023)</strong> of India, the <strong>Information Technology Act, 2000</strong> (along with applicable intermediary guidelines), and the <strong>Google Play Developer Program Policies on User Data</strong>.
+      </p>
+    </div>
+
+    <!-- Section 2 -->
+    <div class="section">
+      <div class="section-header">
+        <div class="section-num">2</div>
+        <h2 class="section-title">Fundamental Architectural Principle: 100% Offline-First</h2>
+      </div>
+      <p>
+        GSTHisab is built with an offline-first foundation. The application operates without remote server dependencies. All core functionalities—including product catalog management, customer records, tax computation (CGST, SGST, IGST), and PDF compilation—are performed directly inside the application execution environment on your Android device.
+      </p>
+      <p>
+        <strong>Zero Remote Database Transmission:</strong> We do not operate, lease, or connect to any remote cloud databases (such as AWS, Firebase, Supabase, or private backend servers) to store or mirror your business records.
+      </p>
+    </div>
+
+    <!-- Section 3 -->
+    <div class="section">
+      <div class="section-header">
+        <div class="section-num">3</div>
+        <h2 class="section-title">Personal Information Handled</h2>
+      </div>
+      <p>
+        GSTHisab does not require account creation, phone number verification, or email registration. Users can use the application immediately upon installation.
+      </p>
+      <p>
+        To personalize your GST bills, you may voluntarily input into the Settings screen:
+      </p>
+      <ul>
+        <li><strong>Business Owner / Authorized Signatory Name:</strong> Printed on invoice declarations and signatures.</li>
+        <li><strong>Business Contact Phone Number & Email:</strong> Displayed on bills for customer communication.</li>
+        <li><strong>Digital Signature / Logo Image:</strong> Stored locally if you photograph or select an image file to embed on bills.</li>
+      </ul>
+      <p>
+        This information is saved solely in your device's local database and is never transmitted off your phone.
+      </p>
+    </div>
+
+    <!-- Section 4 -->
+    <div class="section">
+      <div class="section-header">
+        <div class="section-num">4</div>
+        <h2 class="section-title">Business, Commercial & Tax Information (GSTIN)</h2>
+      </div>
+      <p>
+        To generate statutory Indian Goods and Services Tax invoices complying with Central GST and State GST rules, you can maintain:
+      </p>
+      <ul>
+        <li><strong>Business Profile:</strong> Trade name, legal business name, GSTIN (15-digit GST number), State (Place of Supply), registered business address, and PAN.</li>
+        <li><strong>Bank Settlement Details:</strong> Bank Name, Account Holder Name, Account Number, and IFSC Code (printed on invoice footers for your buyers' bank transfers).</li>
+        <li><strong>Customer Directory:</strong> Customer names, phone numbers, addresses, and buyer GSTINs.</li>
+        <li><strong>Product / Service Catalog:</strong> Item names, HSN / SAC codes, unit prices, and GST rates (0%, 5%, 12%, 18%, 28%).</li>
+      </ul>
+      <p>
+        <strong>Government / Tax Authority Clarification:</strong> GSTHisab does NOT automatically upload or report your GSTIN, sales transactions, or turnover to the GST Portal (GSTN), CBIC, or state tax departments.
+      </p>
+    </div>
+
+    <!-- Section 5 -->
+    <div class="section">
+      <div class="section-header">
+        <div class="section-num">5</div>
+        <h2 class="section-title">Financial and Transaction-Related Information</h2>
+      </div>
+      <p>
+        The Application calculates taxable values, applicable CGST, SGST, IGST totals, and amount in words for each generated invoice.
+      </p>
+      <p>
+        <strong>Payment Disclaimer:</strong> GSTHisab is not a payment gateway, payment aggregator, or financial wallet. We do not collect, process, or store credit/debit card numbers, CVVs, net banking credentials, or UPI PINs. Any payment instructions printed on bills (such as bank details or UPI handles) are entered by you manually.
+      </p>
+    </div>
+
+    <!-- Section 6 -->
+    <div class="section">
+      <div class="section-header">
+        <div class="section-num">6</div>
+        <h2 class="section-title">Device Information, Diagnostics and Analytics</h2>
+      </div>
+      <p>
+        We do not collect your Android Advertising ID (AAID), IMEI, MAC address, hardware serial numbers, or contacts. We do not incorporate background analytical tracking SDKs or behavioral telemetry beacons.
+      </p>
+    </div>
+
+    <!-- Section 7 -->
+    <div class="section">
+      <div class="section-header">
+        <div class="section-num">7</div>
+        <h2 class="section-title">Android Device Permissions and Why They Are Required</h2>
+      </div>
+      <p>
+        In accordance with Google Play's User Data and Permission policies, GSTHisab requests only the minimum runtime permissions necessary to deliver user-requested features:
+      </p>
+      <ul>
+        <li><strong>android.permission.CAMERA (Optional):</strong> Allows taking a photograph of a physical business logo or signature to display on invoice headers. Captured images remain strictly on the local device.</li>
+        <li><strong>Media & Photo Gallery (Optional):</strong> Allows picking an existing logo image or signature from device storage.</li>
+        <li><strong>Scoped Storage / PDF Sharing (Storage Access Framework):</strong> Enables compiling, saving, and exporting PDF invoices to device storage and sharing them via the native Android share sheet.</li>
+      </ul>
+      <p>
+        You can revoke these permissions at any time via Android device settings without disabling core invoice calculations.
+      </p>
+    </div>
+
+    <!-- Section 8 -->
+    <div class="section">
+      <div class="section-header">
+        <div class="section-num">8</div>
+        <h2 class="section-title">Data Storage, Isolation and Local Protection</h2>
+      </div>
+      <p>
+        All records are stored in a local SQLite database located in Android's private internal application sandbox (<code>/data/data/com.gsthisab.invoicemaker/databases/</code>). Under Android's Linux UID isolation, other applications installed on your phone cannot access or read your GSTHisab database.
+      </p>
+    </div>
+
+    <!-- Section 9 -->
+    <div class="section">
+      <div class="section-header">
+        <div class="section-num">9</div>
+        <h2 class="section-title">Local Storage vs. Remote Server Transmission</h2>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Data Category</th>
+            <th>Stored Locally on Device?</th>
+            <th>Transmitted to External Server?</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Business Details & GSTIN</td>
+            <td class="tag-yes">YES (SQLite)</td>
+            <td class="tag-no">NO (0 Bytes)</td>
+          </tr>
+          <tr>
+            <td>Customer Directory</td>
+            <td class="tag-yes">YES (SQLite)</td>
+            <td class="tag-no">NO (0 Bytes)</td>
+          </tr>
+          <tr>
+            <td>Product Catalog & Rates</td>
+            <td class="tag-yes">YES (SQLite)</td>
+            <td class="tag-no">NO (0 Bytes)</td>
+          </tr>
+          <tr>
+            <td>Generated Invoices & History</td>
+            <td class="tag-yes">YES (SQLite)</td>
+            <td class="tag-no">NO (0 Bytes)</td>
+          </tr>
+          <tr>
+            <td>Bank Account & IFSC</td>
+            <td class="tag-yes">YES (SQLite)</td>
+            <td class="tag-no">NO (0 Bytes)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Section 10 -->
+    <div class="section">
+      <div class="section-header">
+        <div class="section-num">10</div>
+        <h2 class="section-title">Third-Party Services, APIs, SDKs and Trackers</h2>
+      </div>
+      <p>
+        GSTHisab does <strong>not</strong> include:
+      </p>
+      <ul>
+        <li>Advertising SDKs (e.g. Google AdMob, Unity, AppLovin).</li>
+        <li>Third-party analytics SDKs (e.g. Firebase Analytics, Mixpanel, Adjust).</li>
+        <li>Third-party cloud storage or database synchronization SDKs.</li>
+      </ul>
+      <p>
+        The app is completely ad-free and tracking-free.
+      </p>
+    </div>
+
+    <!-- Section 11 -->
+    <div class="section">
+      <div class="section-header">
+        <div class="section-num">11</div>
+        <h2 class="section-title">Zero Data Sharing, Sale or Commercialization</h2>
+      </div>
+      <p>
+        We do not sell, rent, monetize, trade, or share your business, personal, or financial records with any third party, broker, or advertising network. Because data never leaves your physical phone, we have zero access to your database.
+      </p>
+    </div>
+
+    <!-- Section 12 -->
+    <div class="section">
+      <div class="section-header">
+        <div class="section-num">12</div>
+        <h2 class="section-title">Data Retention and Deletion Procedures</h2>
+      </div>
+      <p>
+        You have complete control over data retention:
+      </p>
+      <ul>
+        <li><strong>In-App Deletion:</strong> You can delete individual bills, customers, or items at any time within the app.</li>
+        <li><strong>Permanent Device Wipe:</strong> Uninstalling the application or clearing app storage via Android Settings > Apps > GSTHisab > Storage > Clear Data immediately and permanently deletes 100% of the SQLite database and all saved files.</li>
+      </ul>
+    </div>
+
+    <!-- Section 13 -->
+    <div class="section">
+      <div class="section-header">
+        <div class="section-num">13</div>
+        <h2 class="section-title">User Rights under Indian DPDPA 2023</h2>
+      </div>
+      <p>
+        Under the Digital Personal Data Protection Act, 2023 (DPDPA), Indian users have:
+      </p>
+      <ul>
+        <li><strong>Right to Access (Section 11):</strong> Unrestricted access to all stored information within the application.</li>
+        <li><strong>Right to Correction & Erasure (Section 12):</strong> The right to update, modify, or permanently erase records.</li>
+        <li><strong>Right of Grievance Redressal (Section 13):</strong> Right to seek redressal from our designated Grievance Officer.</li>
+        <li><strong>Right to Nominate (Section 14):</strong> Right to designate a nominee to handle data rights.</li>
+      </ul>
+    </div>
+
+    <!-- Section 14 -->
+    <div class="section">
+      <div class="section-header">
+        <div class="section-num">14</div>
+        <h2 class="section-title">Children’s Privacy</h2>
+      </div>
+      <p>
+        GSTHisab is intended for commercial business invoicing and is not directed at children under the age of 18. We do not knowingly collect or solicit data from minors.
+      </p>
+    </div>
+
+    <!-- Section 15 -->
+    <div class="section">
+      <div class="section-header">
+        <div class="section-num">15</div>
+        <h2 class="section-title">Data Security and User Recommendations</h2>
+      </div>
+      <p>
+        Because data is stored on-device, we recommend enabling device-level screen locks (PIN, password, biometrics), avoiding rooted Android devices, and keeping your Android OS updated.
+      </p>
+    </div>
+
+    <!-- Section 16 -->
+    <div class="section">
+      <div class="section-header">
+        <div class="section-num">16</div>
+        <h2 class="section-title">Changes to this Privacy Policy</h2>
+      </div>
+      <p>
+        We may update this policy periodically to reflect statutory updates or Google Play policy modifications. Updates will be indicated by the "Last Updated" date at the top of this document.
+      </p>
+    </div>
+
+    <!-- Section 17 -->
+    <div class="section">
+      <div class="section-header">
+        <div class="section-num">17</div>
+        <h2 class="section-title">Contact Information and Statutory Grievance Redressal</h2>
+      </div>
+      <p>
+        Pursuant to Section 6(9) of the Digital Personal Data Protection Act, 2023 and Rule 3(2) of the Information Technology Rules, 2021, contact details for grievance redressal are provided below:
+      </p>
+      <div class="officer-box">
+        <div class="officer-row"><strong>Grievance Officer:</strong> [Grievance Officer Name] (Data Protection & Grievance Officer)</div>
+        <div class="officer-row"><strong>Grievance Email:</strong> grievance@gsthisab.com</div>
+        <div class="officer-row"><strong>Developer Support:</strong> support@gsthisab.com</div>
+        <div class="officer-row"><strong>Registered Address:</strong> [Registered Office Address, City, State, PIN Code, India]</div>
+        <div class="officer-row"><strong>Statutory Response Timeline:</strong> Acknowledged within 24 hours, resolved within 7 business days.</div>
+      </div>
+    </div>
+
+    <footer>
+      <p>© 2026 [Developer / Company Name]. All rights reserved.</p>
+      <p style="margin-top: 4px;">GSTHisab – GST Invoice Maker | Compliant with Google Play Store Policies & Indian DPDPA 2023</p>
+    </footer>
+  </div>
+
+</body>
+</html>

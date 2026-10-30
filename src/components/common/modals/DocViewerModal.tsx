@@ -1,5 +1,4 @@
 import React from "react";
-import { useResumeStore } from "../../store/useResumeStore";
 import Modal from "../Modal";
 
 interface DocViewerModalProps {
@@ -9,10 +8,8 @@ interface DocViewerModalProps {
 }
 
 export const DocViewerModal = ({ isOpen, onClose, documentUrl }: DocViewerModalProps) => {
-  const { analysisResult } = useResumeStore();
-
-  const finalUrl = documentUrl || analysisResult?.documentUrl;
-  const textContent = analysisResult?.resumeText;
+  const finalUrl = documentUrl;
+  const textContent = "";
 
   if (!isOpen || (!finalUrl && !textContent)) return null;
 

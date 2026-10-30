@@ -1,53 +1,45 @@
 import React, { useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 import { Toaster } from "react-hot-toast";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Profile from "./pages/Profile";
 import Scroll from "./components/common/Scroll";
-import Loading from "./components/common/Loading";
-import useLenis from "./hooks/useLenis";
 import { useAuthStore } from "./store/useAuthStore";
 import NotFound from "./components/common/NotFound";
 import Unauthorized from "./components/common/Unauthorized";
 import ProtectedRoute from "./components/layout/ProtectedRoute";
-import PublicLayout from "./components/layout/PublicLayout";
 import SidebarLayout from "./components/layout/SidebarLayout";
 
 const App = () => {
-  const { getMe, isCheckingAuth } = useAuthStore();
-
-  // Initialize Lenis smooth scroll
-  // useLenis();
+  const { getMe } = useAuthStore();
 
   useEffect(() => {
-    getMe();
-  }, []);
-
-  if (isCheckingAuth) {
-    return (
-      <div className="flex h-screen items-center justify-center bg-base-100">
-        <Loading />
-      </div>
-    );
-  }
+    // Non-blocking check for token if present
+    if (localStorage.getItem("token")) {
+      getMe();
+    }
+  }, [getMe]);
 
   return (
     <div className="min-h-screen bg-base-100 text-base-content">
       <Toaster position="top-right" />
       <Scroll />
       <Routes>
-        <Route path="/" element={<Home />} />
+        {/* Official Public Privacy Policy Routes for Google Play Store */}
+        <Route path="/" element={<PrivacyPolicy />} />
 
-        {/* <Route element={<PublicLayout />}>
-          <Route path="/" element={<Home />} />
-        </Route> */}
+        <Route path="/gsthisab/privacy-policy" element={<PrivacyPolicy />} />
+
+        {/* Template Starter Demo Route */}
+        <Route path="/" element={<Home />} />
 
         {/* Auth Page Routes */}
         <Route path="/login" element={<Login />} />
         <Route path="/unauthorized" element={<Unauthorized />} />
 
-        {/* Protected Routes wrapped in ProtectedRoute and SidebarLayout */}
+        {/* Protected Routes */}
         <Route
           element={
             <ProtectedRoute>

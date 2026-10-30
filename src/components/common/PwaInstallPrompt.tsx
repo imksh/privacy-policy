@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import usePwaInstall from "../hooks/usePwaInstall";
+import usePwaInstall from "../../hooks/usePwaInstall";
 
 const DISMISS_KEY = "gradify_pwa_dismissed_at";
 const DISMISS_TTL_MS = 7 * 24 * 60 * 60 * 1000;

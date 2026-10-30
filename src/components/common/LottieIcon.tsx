@@ -2,9 +2,16 @@ import { memo, useEffect, useRef } from "react";
 import { useInView } from "framer-motion";
 import lottie from "lottie-web";
 
+interface LottieIconProps {
+  animation?: any;
+  className?: string;
+  loop?: boolean;
+  autoplay?: boolean;
+}
+
 const LottieIcon = memo(
-  ({ animation, className = "", loop = true, autoplay = true }) => {
-    const containerRef = useRef(null);
+  ({ animation, className = "", loop = true, autoplay = true }: LottieIconProps) => {
+    const containerRef = useRef<HTMLDivElement | null>(null);
 
     const isInView = useInView(containerRef, {
       once: true,

@@ -95,26 +95,27 @@ const Sidebar = () => {
                     orgRole === "OWNER" ||
                     orgRole === "ADMIN";
 
+                  const navItem = item as any;
                   // Check if item is hidden for this role
-                  if (item.hiddenForRoles) {
+                  if (navItem.hiddenForRoles) {
                     if (
                       isUserAdmin &&
-                      (item.hiddenForRoles.includes("OWNER") ||
-                        item.hiddenForRoles.includes("ADMIN"))
+                      (navItem.hiddenForRoles.includes("OWNER") ||
+                        navItem.hiddenForRoles.includes("ADMIN"))
                     ) {
                       return false;
                     }
-                    if (orgRole && item.hiddenForRoles.includes(orgRole)) {
+                    if (orgRole && navItem.hiddenForRoles.includes(orgRole)) {
                       return false;
                     }
                   }
 
-                  if (!item.allowedRoles) return true; // visible to all
+                  if (!navItem.allowedRoles) return true; // visible to all
                   // System-level ADMIN always gets full access
                   if (user?.role === "ADMIN") return true;
                   // If orgRole not yet resolved, show all items (fail open for admins)
                   if (!orgRole) return true;
-                  return item.allowedRoles.includes(orgRole);
+                  return navItem.allowedRoles.includes(orgRole);
                 })
                 .map((item) => {
                   const Icon = item.icon;
