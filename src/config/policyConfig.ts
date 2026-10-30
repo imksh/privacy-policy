@@ -63,7 +63,7 @@ export const policyConfig: PolicyConfig = {
   developerName: "Karan Sharma", // e.g. "GSTHisab Technologies" or your personal name
   developerLegalEntity: "imksh", // e.g. "GSTHisab Tech LLP" or individual developer
   supportEmail: "idioticminds0@gmail.com", // Your official support email
-  websiteUrl: "https://gsthisab.imksh.vercel.app", // Your official website or public URL
+  websiteUrl: "https://apps.imksh.vercel.app/githisab", // Your official website or public URL
 
   // Policy Dates
   effectiveDate: "October 30, 2026",

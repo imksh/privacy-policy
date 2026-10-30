@@ -30,7 +30,7 @@ const App = () => {
         {/* Official Public Privacy Policy Routes for Google Play Store */}
         <Route path="/" element={<PrivacyPolicy />} />
 
-        <Route path="/gsthisab/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/githisab/privacy-policy" element={<PrivacyPolicy />} />
 
         {/* Template Starter Demo Route */}
         <Route path="/" element={<Home />} />
